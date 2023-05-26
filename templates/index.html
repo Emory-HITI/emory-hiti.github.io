@@ -37,7 +37,7 @@
     <header class="header-section">
         <div class="container">
             <div class="logo">
-                <a target="_blank" href="https://criticaldata.mit.edu/">
+                <a target="_blank" href="https://hitilab.com/">
                     <img src="static/img/logo.svg" height="40" alt="">
                 </a>
             </div>
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="hero-text">
-                        <span><b>Aug 19 - 19, 2023</b></span>
+                        <span><b>Aug 18 - 21, 2023</b></span>
                         <h2>
                             Emory Health
                             <br>
@@ -230,13 +230,25 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
                                     <h5>Day 1</h5>
-                                    <p>Thursday, Aug 19, 2023</p>
+                                    <p>Thursday, Aug 18, 2023</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
                                     <h5>Day 2</h5>
-                                    <p>Friday, Aug 20, 2023</p>
+                                    <p>Friday, Aug 19, 2023</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
+                                    <h5>Day 3</h5>
+                                    <p>Saturday, Aug 20, 2023</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
+                                    <h5>Day 4</h5>
+                                    <p>Sunday, Aug 21, 2023</p>
                                 </a>
                             </li>
                             
@@ -272,6 +284,38 @@
                                         <th>{{sch2.iloc[i]['Hours']}}</th>
                                         <th>{{sch2.iloc[i]['Activity']}}</th>
                                         <th>{{sch2.iloc[i]['Local']}}</th>
+                                    </tr>
+                                    {%endfor%}                            
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead><tr>
+                                        <th width="30%" class="left-col"><i class="fa fa-clock-o"></i>  Time</th>
+                                        <th width="40%"><i class="fa fa-user"></i>  Activity </th>
+                                        <th width="30%"><i class="fa fa-map-marker"></i>  Local</th>
+                                    <tr></thead>
+                                    {%for i in range(n_s2)%}
+                                    <tr>
+                                        <th>{{sch3.iloc[i]['Hours']}}</th>
+                                        <th>{{sch3.iloc[i]['Activity']}}</th>
+                                        <th>{{sch3.iloc[i]['Local']}}</th>
+                                    </tr>
+                                    {%endfor%}                            
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead><tr>
+                                        <th width="30%" class="left-col"><i class="fa fa-clock-o"></i>  Time</th>
+                                        <th width="40%"><i class="fa fa-user"></i>  Activity </th>
+                                        <th width="30%"><i class="fa fa-map-marker"></i>  Local</th>
+                                    <tr></thead>
+                                    {%for i in range(n_s2)%}
+                                    <tr>
+                                        <th>{{sch4.iloc[i]['Hours']}}</th>
+                                        <th>{{sch4.iloc[i]['Activity']}}</th>
+                                        <th>{{sch4.iloc[i]['Local']}}</th>
                                     </tr>
                                     {%endfor%}                            
                                 </table>
@@ -365,7 +409,7 @@
                     <div class="cs-text">
                         <div class="ct-address">
                             <span>Address:</span>
-                            <p>Riverfront Office Park<br>1 Main Street, 12<sup>th</sup> Floor<br>Cambridge<br>MA, 02142, United States</p>
+                            <p>Mathematics & Science Center<br>400 Dowman Drive<br>Atlanta GA, 30322, United States</p>
                         </div>
                     </div>
                     <div style="display:none;" class="cs-text">
@@ -379,8 +423,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="cs-map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.077812302024!2d-71.08218628425165!3d42.36218094295974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a472dac233%3A0xdf50cf25d8618173!2s1%20Main%20St%2C%20Cambridge%2C%20MA%2002142!5e0!3m2!1sen!2sus!4v1673310665276!5m2!1sen!2sus" 
-                          height="400" width="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.8494709878446!2d-84.32904732399213!3d33.790385173256745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f506f1c0382b67%3A0xef343a0b329f3dd0!2sMathematics%20and%20Science%20Center!5e0!3m2!1sen!2sus!4v1685125097477!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -460,7 +503,7 @@
     <script src="static/js/jquery.slicknav.js"></script>
     <script src="static/js/owl.carousel.min.js"></script>
     <script src="static/js/main.js"></script>
-    <script> countdown.setFinalDate(new Date(2023, 5, 18));</script>
+    <script> countdown.setFinalDate(new Date(2023, 8, 18));</script>
 </body>
 
 </html>
