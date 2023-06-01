@@ -409,14 +409,6 @@
                             <p>Mathematics & Science Center<br>400 Dowman Drive<br>Atlanta GA, 30322, United States</p>
                         </div>
                     </div>
-                    <div style="display:none;" class="cs-text">
-                        <div class="ct-address">
-                            <span>Contact:</span>
-                            <p>
-                                <a href="mailto:criticaldata@mit.edu">criticaldata@mit.edu??</a>
-                            </p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="cs-map">
@@ -436,10 +428,6 @@
             <div class="section-title">
                 <h2 >Partners & Sponsors</h2>
                 <p>Thank you for making this event possible!</p>
-            </div>
-
-            <div id="main_partner">
-                <img src="static/img/partner-logo/main-partner.jpg" alt="">
             </div>
 
             <div class="partner-logo owl-carousel">
@@ -500,7 +488,10 @@
     <script src="static/js/jquery.slicknav.js"></script>
     <script src="static/js/owl.carousel.min.js"></script>
     <script src="static/js/main.js"></script>
-    <script> countdown.setFinalDate(new Date(2023, 8, 18));</script>
+    <script> $('#countdown').countdown('2023/09/18', function(event) {
+         $(this).html(event.strftime('%D days %H:%M:%S'));
+        });
+    </script>
 </body>
 
 </html>
