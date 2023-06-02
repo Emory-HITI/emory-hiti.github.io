@@ -406,6 +406,7 @@ ol {
 
 .hero-section {
 	padding-top: 55px;
+	padding-bottom: 425px;  /* Add this line */
 }
 
 .hero-section .hero-text {
@@ -500,6 +501,12 @@ ol {
 	color: #ffffff;
 	margin-bottom: 0;
 	line-height: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*---------------------
