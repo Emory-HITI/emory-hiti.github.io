@@ -50,6 +50,7 @@
                         <li><a href="#Publications">Background</a></li>
                         <li><a href="#Contact">Contact</a></li>
                         <li><a href="#Partners">Partners</a></li>
+                        <li><a href="#Organizers">Organizers</a></li>
                     </ul>
                 </nav>
             </div>
@@ -438,6 +439,31 @@
                     </div>
                 </a>
                 {%endfor%}
+            </div>
+        </div>  
+
+    </section>  
+
+   <!-- Organizers Section Begin -->
+    <section id="Organizers" class="team-member-section spad">
+
+        <div class="container">
+            <div class="section-title">
+                <h2 >Organizers</h2>
+                <p>Thank you for making this event possible!</p>
+            </div>
+
+            <div class="tab-pane" id="organizers-tab">
+                <table class="table table-hover">
+                    <thead><tr>
+                        <th width="30%"><i class="fa"></i>Name</th>
+                    <tr></thead>
+                    {%for i in range(n_organizers)%}
+                    <tr>
+                        <th>{{organizers.iloc[i]['Name']}}</th>
+                    </tr>
+                    {%endfor%}                            
+                </table>
             </div>
         </div>  
 
