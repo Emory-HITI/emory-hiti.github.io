@@ -415,10 +415,12 @@ ol {
 }
 
 .hero-section .hero-text span {
-	font-size: 24px;
-	color: #a31f34;
+	font-size: 30px;
+	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	/* background-color: #2f3039; */
+	background-color: #a31f34;
 }
 
 .hero-section .hero-text h2 {
@@ -428,6 +430,7 @@ ol {
 	font-weight: 600;
 	margin-top: 24px;
 	margin-bottom: 35px;
+	background-color: #a31f34;
 }
 
 .hero-section .hero-text h3 {

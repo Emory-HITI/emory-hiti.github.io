@@ -1,5 +1,6 @@
 from flask_frozen import Freezer
 from server import app
+import os
 
 freezer = Freezer(app)
 
