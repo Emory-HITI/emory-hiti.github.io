@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="hero-text">
-                        <span><b>Aug 18th - 21st, 2023</b></span>
+                        <span><b>Aug 18 - 21, 2023</b></span>
                         <h2>
                             Emory Health AI
                             <br>
@@ -423,6 +423,13 @@
                     <div class="section-title">
                         <h2 >Contact</h2>
                         <p>Get directions to our Venue!</p>
+                        <h2>Parking Instructions</h2>
+                        <p>Parking Services will raise the Fishburne permit gates (not the Fishburne visitor gates) at 4pm on Friday, August 18th, allowing attendees to park without a permit and at no cost.
+ 
+                            Fees apply at the Fishburne visitor lot from 7am – 5pm M – F. Although fees do not apply after 5pm M – F and on weekends, an entry ticket is needed to exit at all times or a lost ticket fee of $25 is charged.
+                            
+                            Fees apply at the Oxford Road visitor deck from 7am – 7pm M – F. Although fees do not apply after 7pm M – F and on weekends, an entry ticket is needed to exit at all times or a lost ticket fee of $25 is charged.
+                        </p>
                     </div>
                     <div class="cs-text">
                         <div class="ct-address">
@@ -451,7 +458,7 @@
                 <p>Thank you to our partners for making this event possible!</p>
             </div>
 
-            <div class="partner-logo owl-carousel">
+            <div class="">
                 {%for i in range(n_partners)%}
                 <a target="_blank" href="{{partners.iloc[i]['URL']}}" class="pl-table">
                     <div class="pl-tablecell">
@@ -478,6 +485,7 @@
                     {%for i in range(n_organizers)%}
                     <tr>
                         <th>{{organizers.iloc[i]['Name']}}</th>
+                        <th>{{organizers.iloc[i]['Email']}}</th>
                     </tr>
                     {%endfor%}                            
                 </table>
