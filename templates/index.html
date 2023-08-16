@@ -286,9 +286,9 @@
                                     <tr></thead>
                                     {%for i in range(n_s1)%}
                                     <tr>
-                                        <th>{{sch1.iloc[i]['Hours']}}</th>
+                                        <th>{{sch1.iloc[i]['Hours (EST)']}}</th>
                                         <th>{{sch1.iloc[i]['Activity']}}</th>
-                                        <th>{{sch1.iloc[i]['Local']}}</th>
+                                        <th>{{sch1.iloc[i]['Location']}}</th>
                                     </tr>
                                     {%endfor%}                            
                                 </table>
@@ -302,9 +302,9 @@
                                     <tr></thead>
                                     {%for i in range(n_s2)%}
                                     <tr>
-                                        <th>{{sch2.iloc[i]['Hours']}}</th>
+                                        <th>{{sch2.iloc[i]['Hours (EST)']}}</th>
                                         <th>{{sch2.iloc[i]['Activity']}}</th>
-                                        <th>{{sch2.iloc[i]['Local']}}</th>
+                                        <th>{{sch2.iloc[i]['Location']}}</th>
                                     </tr>
                                     {%endfor%}                            
                                 </table>
@@ -316,11 +316,11 @@
                                         <th width="40%"><i class="fa fa-user"></i>  Activity </th>
                                         <th width="30%"><i class="fa fa-map-marker"></i>  Local</th>
                                     <tr></thead>
-                                    {%for i in range(n_s2)%}
+                                    {%for i in range(n_s3)%}
                                     <tr>
-                                        <th>{{sch3.iloc[i]['Hours']}}</th>
+                                        <th>{{sch3.iloc[i]['Hours (EST)']}}</th>
                                         <th>{{sch3.iloc[i]['Activity']}}</th>
-                                        <th>{{sch3.iloc[i]['Local']}}</th>
+                                        <th>{{sch3.iloc[i]['Location']}}</th>
                                     </tr>
                                     {%endfor%}                            
                                 </table>
@@ -332,11 +332,11 @@
                                         <th width="40%"><i class="fa fa-user"></i>  Activity </th>
                                         <th width="30%"><i class="fa fa-map-marker"></i>  Local</th>
                                     <tr></thead>
-                                    {%for i in range(n_s2)%}
+                                    {%for i in range(n_s4)%}
                                     <tr>
-                                        <th>{{sch4.iloc[i]['Hours']}}</th>
+                                        <th>{{sch4.iloc[i]['Hours (EST)']}}</th>
                                         <th>{{sch4.iloc[i]['Activity']}}</th>
-                                        <th>{{sch4.iloc[i]['Local']}}</th>
+                                        <th>{{sch4.iloc[i]['Location']}}</th>
                                     </tr>
                                     {%endfor%}                            
                                 </table>
@@ -458,7 +458,7 @@
                 <p>Thank you to our partners for making this event possible!</p>
             </div>
 
-            <div class="">
+            <div class="partner-logo owl-carousel">
                 {%for i in range(n_partners)%}
                 <a target="_blank" href="{{partners.iloc[i]['URL']}}" class="pl-table">
                     <div class="pl-tablecell">
